@@ -4,21 +4,37 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- importing fonts from fontawesome -->
         <link
             rel="stylesheet"
-            href="hhtps://use.fontawesome.com/releases/v5.0.2/all.css"
-            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhnd0JK28anvf"
+            href="hhtps://use.fontawesome.com/releases/v5.10.0/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
             crossorigin="anonymous"
         />
 
         <link rel="stylesheet" href="style.css" />
         <title>Slider Sign In/Sign Up Form</title>
+        <style>
+            body {
+                background-image: url(https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+            }
+        </style>
+        <!-- Navigation Bar -->
+        <div class="topnav">
+            <a class="active" href="homePage.html">Home</a>
+            <a href="aboutPage.html">About</a>
+            <a href="#contact">Contact</a>
+            <a href="calendarPage.html">Calendar</a>
+            <a href="index.html">LogIn/Register</a>
+        </div>
     </head>
     <body>
+        <!-- container for sign-up -->
         <div class="container" id="container">
             <div class="form-container sign-up-container">
                 <form action="#">
                     <h1>Create Account</h1>
+                    <!-- login buttons for facebook, google, and linkedin -->
                     <div class="social-container">
                         <a href="#" class="social"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
                         <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
@@ -31,6 +47,7 @@
                     <a href="signUp.html"><button>Sign Up</button></a>
                 </form>
             </div>
+            <!-- container for sign-in -->
             <div class="form-container sign-in-container">
                 <form action="#">
                     <h1>Sign in</h1>
@@ -46,13 +63,16 @@
                     <a href="signIn.html"></a><button>Sign In</button></a>
                 </form>
             </div>
+            <!-- Slider feature information -->
             <div class="overlay-container">
                 <div class="overlay">
+                    <!-- right panel for slider -->
                     <div class="overlay-panel overlay-left">
                         <h1>Welcome Back!</h1>
                         <p>To keep connected with us please login with your personal info</p>
                         <button class="ghost" id="signIn">Sign In</button>
                     </div>
+                    <!-- left panel for slider -->
                     <div class="overlay-panel overlay-right">
                         <h1>Hello, Friend!</h1>
                         <p>Enter your personal details and start journey with us</p>
